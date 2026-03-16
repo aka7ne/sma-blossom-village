@@ -1,0 +1,13 @@
+from KB_00_Agent import agent
+
+def affiche_agent( agt ):
+    """
+    Rôle : affiche les informations de l'agent
+    Donnée : agt : objet de type agt
+    Préconditions : agt doit être un objet de type agent.
+    """
+    print("Nom:",agt.name, "Position :", (agt.x, agt.y), " Malade ou sain ? :" ,agt.etat, " Humeur : ",agt.humeur )
+
+
+agt = agent("Lila", "6","7",)
+affiche_agent( agt )
